@@ -22,6 +22,14 @@ export default function Botões({legenda, tema, evento}:Props){
             </View>
         )   
     }
+
+    return (
+        <View style={styles.container}>
+          <Pressable style={styles.botão} onPress={evento}>
+            <Text style={styles.texto}>{legenda}</Text>
+          </Pressable>
+        </View>
+      );
 }
 
 const styles = StyleSheet.create({
