@@ -1,15 +1,7 @@
-import { Text, View } from "react-native";
+import Cont from './components/contador'
 
-export default function Index() {
-  return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text>OI :3.</Text>
-    </View>
-  );
+export default function App(){
+    return(
+        <Cont/>
+    );
 }
