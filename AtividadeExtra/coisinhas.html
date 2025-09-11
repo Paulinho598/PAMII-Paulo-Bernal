@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                background-color: lightpink;
+            }
+
+            div{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            a{
+                top: 450px;
+                padding: 30px;
+                color: black;
+                cursor: pointer;
+                font-weight: bold;
+                position: relative;
+                border-radius: 50px;
+                text-decoration: none;
+                border: 1px solid black;
+                background-color: lightblue;
+            }
+
+            button:hover{
+                opacity: 0.8;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <a href="#" id="btn" onclick="click()">Aperte!</a>
+        </div>
+        <script>
+            //Exercício 8: Eventos DOM
+                var botao = document.getElementById("btn");
+                botao.addEventListener("click", function(event){
+                    alert("VOCÊ APERTOU");
+                });
+        </script>
+    </body>
+</html> 
